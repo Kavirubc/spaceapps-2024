@@ -12,7 +12,7 @@ const HeroSec: React.FC = () => {
                     <Image className="lg:max-w-md max-w-xs" src={logo} alt="Space Apps Challenge 2024" />
                 </div>
                 <h1 className="text-4xl md:text-6xl font-bold">Space Apps Challenge 2024</h1>
-                <h2 className="text-2xl md:text-3xl mt-4">1st & 2nd October</h2>
+                <h2 className="text-2xl md:text-3xl mt-4">Colombo, Sri Lanka</h2>
             </div>
         </main>
     );
