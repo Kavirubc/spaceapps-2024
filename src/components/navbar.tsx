@@ -12,13 +12,13 @@ const NavBar: React.FC = () => {
 
     return (
         
-        <nav className="bg-black text-white py-4 fixed w-full">
-            <div className="container md:mx-auto flex justify-between items-center">
+        <nav className="bg-black text-white py-6 fixed w-full bg-gray-900/80 backdrop-blur-sm">
+            <div className="container mx-auto flex justify-between items-center">
                 <div className="flex items-center">
                     {/* <img src="path/to/logo.png" alt="NASA Space Apps Colombo" className="h-8" /> */}
                     <span className="ml-2 md:text-xl font-bold">NASA SPACE APPS COLOMBO</span>
                 </div>
-                <div className="hidden lg:flex space-x-4">
+                <div className="hidden md:flex space-x-4">
                     <Link href="/" className="group relative">
                         Home
                         <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-500 group-hover:w-full"></span>
@@ -44,14 +44,14 @@ const NavBar: React.FC = () => {
                         <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-500 group-hover:w-full"></span>
                     </Link>
                 </div>
-                <div className="lg:hidden flex items-center mx-2">
+                <div className="md:hidden flex items-center mx-2">
                     <button onClick={toggleMenu} className="focus:outline-none">
                         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                     </button>
                 </div>
             </div>
             {isOpen && (
-                <div className="lg:hidden mt-2">
+                <div className="md:hidden mt-2">
                     <Link href="#" className="block py-2 px-4 text-sm hover:bg-gray-700">Home</Link>
                     <Link href="#" className="block py-2 px-4 text-sm hover:bg-gray-700">Competition</Link>
                     <Link href="#" className="block py-2 px-4 text-sm hover:bg-gray-700">Challenges</Link>
