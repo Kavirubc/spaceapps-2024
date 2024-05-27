@@ -10,7 +10,7 @@ const FooterSec: React.FC = () => {
                     <h3 className="text-pink-500 text-lg font-bold mb-4">Useful Links</h3>
                     <ul className="space-y-2">
                         <li><Link href="#" className="hover:underline">Space Apps Challenge</Link></li>
-                        <li><Link href="#" className="hover:underline">NASA's Open Data Universe</Link></li>
+                        <li><Link href="#" className="hover:underline">NASA&apos; Open Data Universe</Link></li>
                         <li><Link href="#" className="hover:underline">Space Apps COVID-19</Link></li>
                         <li><Link href="#" className="hover:underline">Participant FAQ</Link></li>
                         <li><Link href="#" className="hover:underline">COVID-19 Bootcamp</Link></li>
