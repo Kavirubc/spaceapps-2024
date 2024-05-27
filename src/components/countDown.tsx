@@ -37,7 +37,17 @@ const CountDown: React.FC = () => {
     }, []);
 
     return (
-        <div className="flex justify-center items-center space-x-8 p-8 bg-dark text-white my-40">
+        <main className="flex flex-col justify-center items-center bg-dark text-white my-4  mt-40">
+            <div className="text-center">
+                <span className="block text-white text-xl lg:text-3xl font-bold">
+                    Counts <span className="text-purple-500">Every</span> Second
+                </span>
+                <span className="block text-xl lg:text-3xl font-bold">
+                    Until the Hackathon
+                </span>
+            </div>
+       
+            <div className='flex space-x-8 p-8  ' >
             {Object.keys(timeLeft).map((interval) => (
                 <div key={interval} className="text-center">
                     <span className="block text-pink-500 text-xl lg:text-3xl font-bold">
@@ -48,15 +58,10 @@ const CountDown: React.FC = () => {
                     </span>
                 </div>
             ))}
-            <div className="text-center">
-                <span className="block text-white text-xl lg:text-3xl font-bold">
-                    Counts <span className="text-purple-500">Every</span> Second
-                </span>
-                <span className="block text-xl lg:text-3xl font-bold">
-                    Until the Hackathon
-                </span>
-            </div>
+            
         </div>
+            
+        </main>
     );
 };
 

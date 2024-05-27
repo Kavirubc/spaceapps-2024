@@ -12,7 +12,7 @@ const NavBar: React.FC = () => {
 
     return (
         
-        <nav className="bg-black text-white py-6 fixed w-full bg-gray-900/80 backdrop-blur-sm">
+        <nav className="bg-black text-white py-6 fixed w-full bg-gray-900/80 backdrop-blur-xl z-50">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="flex items-center">
                     {/* <img src="path/to/logo.png" alt="NASA Space Apps Colombo" className="h-8" /> */}
