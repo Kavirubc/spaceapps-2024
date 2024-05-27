@@ -5,7 +5,13 @@ import Link from 'next/link';
 
 const AboutUs: React.FC = () => {
     return (
-        <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start lg:space-x-8 p-8 bg-dark text-white ">
+        <main className="flex flex-col justify-center text-center bg-dark text-white ">
+            <h2 className="text-4xl font-bold text-white mb-20">
+                About <span className="text-pink-500">US</span>
+            </h2>
+        
+            <div className='flex flex-col lg:flex-row items-center lg:items-start lg:space-x-8 p-8'>
+            
             <div className="lg:w-1/2 w-full">
                 <iframe
                     width="100%"
@@ -18,10 +24,8 @@ const AboutUs: React.FC = () => {
                     className="rounded-lg"
                 ></iframe>
             </div>
-            <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
-                <h2 className="text-4xl font-bold text-white">
-                    About <span className="text-pink-500">US</span>
-                </h2>
+            <div className="lg:w-1/2 w-full mt-8 lg:mt-0 text-left">
+               
                 <p className="mt-4 text-lg">
                     We are proud and thrilled to announce ‘NASA Space Apps Colombo, 2022’
                     International hackathon event in Sri Lanka for the third consecutive year.
@@ -51,7 +55,9 @@ const AboutUs: React.FC = () => {
                     </Link>
                 </div>
             </div>
+
         </div>
+        </main>
     );
 }
 

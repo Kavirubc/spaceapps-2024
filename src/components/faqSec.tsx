@@ -48,7 +48,7 @@ const FaqSec: React.FC = () => {
                 <Image src={faqImg} alt="Astronaut" className="w-full h-auto"  />
             </div>
            
-            <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
+            <div className="lg:w-1/2 w-full mt-8 lg:mt-0 z-0">
                 
                 <div className=" bg-white/10 backdrop-blur-md mt-2 p-6 rounded-xl">
                     {faqs.map((faq, index) => (
