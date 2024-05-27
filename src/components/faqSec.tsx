@@ -39,15 +39,18 @@ const FaqSec: React.FC = () => {
     ];
 
     return (
-        <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-8 p-8 bg-dark text-white min-h-screen">
+        <div className="flex flex-col justify-center items-center lg:space-x-8 p-8 bg-dark text-white min-h-screen">
+            <h2 className="text-4xl font-bold text-white mb-36">
+                The <span className="text-pink-500">FAQs</span>
+            </h2>
+            <div className='flex flex-col lg:flex-row '>
             <div className="lg:w-1/2 w-full">
                 <Image src={faqImg} alt="Astronaut" className="w-full h-auto"  />
             </div>
+           
             <div className="lg:w-1/2 w-full mt-8 lg:mt-0">
-                <h2 className="text-4xl font-bold text-white">
-                    The <span className="text-pink-500">FAQs</span>
-                </h2>
-                <div className="mt-4">
+                
+                <div className=" bg-white/10 backdrop-blur-md mt-2 p-6 rounded-xl">
                     {faqs.map((faq, index) => (
                         <div key={index} className="border-b border-gray-600">
                             <button
@@ -55,12 +58,13 @@ const FaqSec: React.FC = () => {
                                 className="w-full text-left py-4 focus:outline-none flex justify-between items-center text-xl text-purple-500"
                             >
                                 {faq.question}
-                                <span className="text-blue-500">{open === index ? '▲' : '▼'}</span>
+                                <span className="text-purple-500">{open === index ? '▲' : '▼'}</span>
                             </button>
                             {open === index && <div className="py-4 text-lg text-white">{faq.answer}</div>}
                         </div>
                     ))}
                 </div>
+            </div>
             </div>
         </div>
     );
