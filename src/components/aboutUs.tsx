@@ -1,10 +1,11 @@
+'use client'
 import React from 'react';
 import { Facebook, Instagram, Youtube, Twitter, Linkedin } from 'lucide-react';
 import Link from 'next/link';
 
 const AboutUs: React.FC = () => {
     return (
-        <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start lg:space-x-8 p-8 bg-dark text-white min-h-screen">
+        <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start lg:space-x-8 p-8 bg-dark text-white ">
             <div className="lg:w-1/2 w-full">
                 <iframe
                     width="100%"
