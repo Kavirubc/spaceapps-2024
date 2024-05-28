@@ -44,8 +44,8 @@ const FaqSec: React.FC = () => {
                 The <span className="text-pink-500">FAQs</span>
             </h2>
             <div className='flex flex-col lg:flex-row '>
-            <div className="lg:w-1/2 w-full">
-                <Image src={faqImg} alt="Astronaut" className="w-full h-auto"  />
+            <div className="lg:w-1/2 w-full content-center">
+                <Image src={faqImg} alt="Astronaut" className="md:w-3/4 w-full  h-auto"  />
             </div>
            
             <div className="lg:w-1/2 w-full mt-8 lg:mt-0 z-0">
