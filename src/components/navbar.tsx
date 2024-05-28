@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
+import logo from '@/../public/logos/nav-logo.png'
 
 const NavBar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,11 +14,12 @@ const NavBar: React.FC = () => {
 
     return (
         
-        <nav className="bg-black text-white py-6 fixed w-full bg-gray-900/80 backdrop-blur-xl z-50">
-            <div className="container mx-auto flex justify-between items-center">
+        <div className="  text-white py-6 fixed w-full  md:mx20  bg-gray-900/80 backdrop-blur-xl z-50 ">
+            <div className=" md:mx-10 mx-2 flex justify-between ">
                 <div className="flex items-center">
-                    {/* <img src="path/to/logo.png" alt="NASA Space Apps Colombo" className="h-8" /> */}
-                    <span className="ml-2 md:text-xl font-bold">NASA SPACE APPS COLOMBO</span>
+                    {/* <Image src={logo.src} alt="NASA Space Apps Colombo" width={100} height={2} /> */}
+                    SpaceApps
+                    
                 </div>
                 <div className="hidden md:flex space-x-4">
                     <Link href="/" className="group relative">
@@ -44,7 +47,7 @@ const NavBar: React.FC = () => {
                         <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-500 group-hover:w-full"></span>
                     </Link>
                 </div>
-                <div className="md:hidden flex items-center mx-2">
+                <div className="md:hidden flex items-center mr-2">
                     <button onClick={toggleMenu} className="focus:outline-none">
                         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                     </button>
@@ -60,7 +63,7 @@ const NavBar: React.FC = () => {
                     <Link href="#" className="block py-2 px-4 text-sm hover:bg-gray-700">Hall of Fame</Link>
                 </div>
             )}
-        </nav>
+        </div>
        
     );
 };
