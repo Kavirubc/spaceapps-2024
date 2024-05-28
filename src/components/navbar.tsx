@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
 
     return (
         
-        <div className="  text-white py-6 fixed w-full  md:mx20  bg-gray-900/80 backdrop-blur-xl  ">
+        <div className="  text-white py-6 fixed w-full  md:mx20  bg-gray-900/80 backdrop-blur-xl z-50 ">
             <div className=" md:mx-10 mx-2 flex justify-between ">
                 <div className="flex items-center">
                     {/* <Image src={logo.src} alt="NASA Space Apps Colombo" width={100} height={2} /> */}
