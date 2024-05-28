@@ -39,7 +39,7 @@ const FaqSec: React.FC = () => {
     ];
 
     return (
-        <div className="flex flex-col justify-center items-center lg:space-x-8 p-8 bg-dark text-white min-h-screen">
+        <div className="flex flex-col  items-center lg:space-x-8 mx-4 md:mx-20 bg-dark text-white min-h-screen">
             <h2 className="text-4xl font-bold text-white mb-36">
                 The <span className="text-pink-500">FAQs</span>
             </h2>
