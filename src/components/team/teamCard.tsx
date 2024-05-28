@@ -10,7 +10,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ name, imageUrl }) => {
     const [firstName, lastName] = name.split(' ');
 
     return (
-        <div className="bg-white rounded-lg p-4 text-center shadow-lg hover:scale-105 transition-transform duration-300 md:mx-0 mx-14">
+        <div className="bg-white rounded-lg p-4 text-center shadow-lg hover:scale-105 transition-transform duration-300 md:mx-0 mx-14 md:py-10">
 
             
             <img src={imageUrl} width={96} height={96} alt={name} className="rounded-full w-24 h-24 mx-auto my-4" />

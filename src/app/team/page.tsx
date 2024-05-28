@@ -37,8 +37,8 @@ const Page: React.FC = () => {
     return (
         <>
             <NavBar />
-            <div className="min-h-screen bg-dark text-white py-12 pt-40">
-                <div className="container mx-auto">
+            <div className="min-h-screen bg-dark text-white py-12 pt-40 md:mx-40 mx-8">
+                <div className="">
                     <h2 className="text-4xl font-bold text-center mb-16">The <span className="text-pink-500">Team</span></h2>
 
                     <div className="mb-16">
