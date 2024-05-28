@@ -1,0 +1,83 @@
+{
+    "hosts": [
+        {
+            "role": "Sri Lanka Local Lead",
+            "name": "Anupa Kulathunga",
+            "imageUrl": "/path/to/image1.jpg"
+        }
+    ],
+    "cohosts": [
+        {
+            "role": "Co-Hosts",
+            "name": "Suvin Kodituwakku",
+            "imageUrl": "/path/to/image2.jpg"
+        },
+        {
+            "role": "Co-Hosts",
+            "name": "Uthpala Nethmini",
+            "imageUrl": "/path/to/image3.jpg"
+        },
+        {
+            "role": "Co-Hosts",
+            "name": "Dilshan Wijerathne",
+            "imageUrl": "/path/to/image4.jpg"
+        }
+    ],
+    "universities": {
+        "University of Colombo": [
+            {
+                "name": "Kaviru Hapurarachchi",
+                "imageUrl": "kaviruhapuarachchi.png"
+            }
+        ],
+        "University of Peradeniya": [
+            {
+                "name": "Supal Edirisinghe",
+                "imageUrl": "path"
+            },
+            {
+                "name": "Pulathisi Navarathne",
+                "imageUrl": "/path/to/image6.jpg"
+            }
+        ],
+        
+        "Open University of Sri Lanka": [
+            {
+                "name": "Ishan Pramuditha",
+                "imageUrl": "/path/to/image8.jpg"
+            },
+            {
+                "name": "Akeela Bhanu",
+                "imageUrl": "/path/to/image9.jpg"
+            }
+        ],
+        "University of Moratuwa": [
+            {
+                "name": "Warnitha Nipun",
+                "imageUrl": "/path/to/image10.jpg"
+            }
+        ],
+        "Sabaragamuwa University of Sri Lanka": [
+            {
+                "name": "Thilosha Nipuni",
+                "imageUrl": "/path/to/image11.jpg"
+            },
+            {
+                "name": "Kavinda Wishwajith",
+                "imageUrl": "/path/to/image12.jpg"
+            }
+        ],
+        "Sri Lanka Institute of Information Technology": [
+            {
+                "name": "Thimira Chandrasekara",
+                "imageUrl": "/path/to/image13.jpg"
+            }
+        ],
+        "Sri Lanka Technological Campus": [
+            {
+                "name": "Member Name",
+                "imageUrl": "/path/to/image14.jpg"
+            }
+        ]
+    }
+}

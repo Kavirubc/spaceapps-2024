@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-import faqImg from "@/../public/faq.png"
+import faqImg from "@/../public/images/faq.png"
 
 const FaqSec: React.FC = () => {
     const [open, setOpen] = useState<number | null>(null);
@@ -39,13 +39,13 @@ const FaqSec: React.FC = () => {
     ];
 
     return (
-        <div className="flex flex-col justify-center items-center lg:space-x-8 p-8 bg-dark text-white min-h-screen">
+        <div className="flex flex-col  items-center lg:space-x-8 mx-4 md:mx-20 bg-dark text-white min-h-screen">
             <h2 className="text-4xl font-bold text-white mb-36">
                 The <span className="text-pink-500">FAQs</span>
             </h2>
             <div className='flex flex-col lg:flex-row '>
-            <div className="lg:w-1/2 w-full">
-                <Image src={faqImg} alt="Astronaut" className="w-full h-auto"  />
+            <div className="lg:w-1/2 w-full content-center">
+                <Image src={faqImg} alt="Astronaut" className="md:w-3/4 w-full  h-auto"  />
             </div>
            
             <div className="lg:w-1/2 w-full mt-8 lg:mt-0 z-0">

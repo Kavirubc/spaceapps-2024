@@ -15,10 +15,12 @@ const NavBar: React.FC = () => {
     return (
         
         <div className="  text-white py-6 fixed w-full  md:mx20  bg-gray-900/80 backdrop-blur-xl z-50 ">
-            <div className=" md:mx-10 mx-2 flex justify-between ">
+            <div className=" md:mx-10 mx-2 flex justify-between text-sm ">
                 <div className="flex items-center">
                     {/* <Image src={logo.src} alt="NASA Space Apps Colombo" width={100} height={2} /> */}
-                    SpaceApps
+                    <Link href="/" className="flex items-center">
+                        SpaceApps 
+                    </Link>
                     
                 </div>
                 <div className="hidden md:flex space-x-4">
@@ -54,13 +56,13 @@ const NavBar: React.FC = () => {
                 </div>
             </div>
             {isOpen && (
-                <div className="md:hidden mt-2">
-                    <Link href="#" className="block py-2 px-4 text-sm hover:bg-gray-700">Home</Link>
-                    <Link href="#" className="block py-2 px-4 text-sm hover:bg-gray-700">Competition</Link>
-                    <Link href="#" className="block py-2 px-4 text-sm hover:bg-gray-700">Challenges</Link>
-                    <Link href="#" className="block py-2 px-4 text-sm hover:bg-gray-700">Timeline</Link>
-                    <Link href="#" className="block py-2 px-4 text-sm hover:bg-gray-700">Team</Link>
-                    <Link href="#" className="block py-2 px-4 text-sm hover:bg-gray-700">Hall of Fame</Link>
+                <div className="md:hidden mt-4 text-center min-h-1/4">
+                    <Link href="/" className="block py-2 px-4 text-sm hover:bg-gray-700">Home</Link>
+                    <Link href="/competition" className="block py-2 px-4 text-sm hover:bg-gray-700">Competition</Link>
+                    <Link href="/challenges" className="block py-2 px-4 text-sm hover:bg-gray-700">Challenges</Link>
+                    <Link href="/timeline" className="block py-2 px-4 text-sm hover:bg-gray-700">Timeline</Link>
+                    <Link href="/team" className="block py-2 px-4 text-sm hover:bg-gray-700">Team</Link>
+                    <Link href="/hall-of-fame" className="block py-2 px-4 text-sm hover:bg-gray-700">Hall of Fame</Link>
                 </div>
             )}
         </div>

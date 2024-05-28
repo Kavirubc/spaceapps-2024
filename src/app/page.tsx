@@ -10,13 +10,10 @@ export default function Home() {
   return (
     <>
       <Navbar />
-
-     
           <HeroSec />
           <AboutUs />
           <CountDown />
           <FaqSec />
-       
       <FooterSec />
     </>
   );

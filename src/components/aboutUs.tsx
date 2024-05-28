@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const AboutUs: React.FC = () => {
     return (
-        <main className="flex flex-col justify-center text-center bg-dark text-white ">
+        <main className="flex flex-col justify-center text-center bg-dark text-white md:mx-20">
             <h2 className="text-4xl font-bold text-white mb-20">
                 About <span className="text-pink-500">US</span>
             </h2>
