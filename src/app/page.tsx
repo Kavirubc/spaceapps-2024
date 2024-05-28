@@ -10,11 +10,16 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="flex min-h-screen px-40 flex-col items-center justify-between">
-        <HeroSec />
-        <AboutUs />
-        <CountDown />
-        <FaqSec />
+
+      <main className="flex flex-col mx-auto w-full items-center justify-center content-center ">
+
+        <div className="flex mx-auto flex-col items-center content-center justify-between max-w-screen-2xl">
+          <HeroSec />
+          <AboutUs />
+          <CountDown />
+          <FaqSec />
+        </div>
+
       </main>
       <FooterSec />
     </>
