@@ -9,11 +9,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Navbar />
-          <HeroSec />
-          <AboutUs />
-          <CountDown />
-          <FaqSec />
+      <nav className="max-w-full"> 
+        <Navbar />
+      </nav>
+      <div className="flex flex-col justify-center items-center ">
+        <HeroSec />
+        <AboutUs />
+        <CountDown />
+        <FaqSec />
+      </div>
       <FooterSec />
     </>
   );
