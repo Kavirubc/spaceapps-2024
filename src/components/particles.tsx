@@ -12,7 +12,7 @@ const ParticleDesign = () => {
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
     }, []);
     return (
-        <div className="-z-10" id="partclesContainor">
+        <div className="-z-10 w-full" id="partclesContainor">
             <Particles
                 id="tsparticles"
                 init={particlesInit}

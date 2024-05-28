@@ -4,8 +4,8 @@ import { Facebook, Instagram, Youtube, Twitter, Linkedin, Phone, Mail } from 'lu
 
 const FooterSec: React.FC = () => {
     return (
-        <footer className="bg-black/80  text-white py-12">
-            <div className="container mx-4 md:mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+        <footer className="bg-black/80  text-white py-12 text-sm">
+            <div className="container mx-4 md:mx-auto grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-2">
                 <div>
                     <h3 className="text-pink-500 text-lg font-bold mb-4">Useful Links</h3>
                     <ul className="space-y-2">
@@ -68,13 +68,13 @@ const FooterSec: React.FC = () => {
                     <h3 className="text-pink-500 text-lg font-bold mb-4">Contact Us</h3>
                     <ul className="space-y-2">
                         <li className="flex items-center"><Phone className="w-6 h-6 mr-2" />+94 71 206 8707</li>
-                        <li className="flex items-center"><Mail className="w-6 h-6 mr-2" />info@spaceappscolombo.org</li>
+                        {/* <li className="flex items-center"><Mail className="w-6 h-6 md:mr-2" />info@spaceappscolombo.org</li> */}
                         <li>SEDS Sri Lanka, Colombo</li>
                     </ul>
                 </div>
             </div>
             <div className="text-center mt-8">
-                <p>Copyright © 2024 SEDS Sri Lanka. All Rights Reserved</p>
+                <p>Copyright © 2024 SEDS Sri Lanka.</p>
             </div>
         </footer>
     );
