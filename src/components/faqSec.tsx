@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 
-import faqImg from "@/../public/faq.png"
+import faqImg from "@/../public/images/faq.png"
 
 const FaqSec: React.FC = () => {
     const [open, setOpen] = useState<number | null>(null);
