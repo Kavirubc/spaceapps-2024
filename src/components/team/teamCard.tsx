@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 
 interface TeamCardProps {
@@ -7,14 +6,15 @@ interface TeamCardProps {
 }
 
 const TeamCard: React.FC<TeamCardProps> = ({ name, imageUrl }) => {
-    const [firstName, lastName] = name.split(' ');
 
+    
+    
     return (
-        <div className="bg-white rounded-lg p-4 text-center shadow-lg hover:scale-105 transition-transform duration-300 md:mx-0 mx-14 md:py-10">
-
-            
-            <img src={imageUrl} width={96} height={96} alt={name} className="rounded-full w-24 h-24 mx-auto my-4" />
-            <h4 className="text-lg font-bold text-black">{firstName} <span className="text-pink-500">{lastName}</span></h4>
+        <div className="bg-white/10 backdrop-blur-sm rounded-lg shadow-slate-900 text-center shadow-md hover:scale-105 transition-transform duration-300 p-6 md:p-8 w-64 h-48 flex flex-col justify-center items-center">
+            <img src={imageUrl} alt={name} className="rounded-full w-20 h-20 mb-4" />
+            <h4 className="text-lg font-bold text-white break-words leading-tight">
+                {name}
+            </h4>
         </div>
     );
 };

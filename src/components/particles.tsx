@@ -26,7 +26,7 @@ const ParticleDesign = () => {
                                 "color": {
                                     "value": "#fff"
                                 },
-                                "opacity": 1
+                                "opacity": 0.5
                             },
                             "enable": false
                         },
@@ -82,7 +82,7 @@ const ParticleDesign = () => {
                                     "speed": 1
                                 },
                                 "bounce": {
-                                    "distance": 200
+                                    "distance": 2000
                                 },
                                 "bubble": {
                                     "distance": 200,
@@ -97,7 +97,7 @@ const ParticleDesign = () => {
                                     "radius": 60
                                 },
                                 "grab": {
-                                    "distance": 100,
+                                    "distance": 1000,
                                     "links": {
                                         "blink": false,
                                         "consent": false,
@@ -110,7 +110,7 @@ const ParticleDesign = () => {
                                     "quantity": 4
                                 },
                                 "remove": {
-                                    "quantity": 2
+                                    "quantity":10
                                 },
                                 "repulse": {
                                     "distance": 200,
@@ -157,11 +157,11 @@ const ParticleDesign = () => {
                             },
                             "collisions": {
                                 "absorb": {
-                                    "speed": 2
+                                    "speed": 10
                                 },
                                 "bounce": {
                                     "horizontal": {
-                                        "value": 1
+                                        "value": 10
                                     },
                                     "vertical": {
                                         "value": 1
@@ -216,7 +216,7 @@ const ParticleDesign = () => {
                             "groups": {
                                 "z5000": {
                                     "number": {
-                                        "value": 70
+                                        "value": 40
                                     },
                                     "zIndex": {
                                         "value": 50
@@ -253,7 +253,7 @@ const ParticleDesign = () => {
                                     "value": 10
                                 },
                                 "attract": {
-                                    "distance": 200,
+                                    "distance": 20,
                                     "enable": false,
                                     "rotate": {
                                         "x": 3000,
@@ -261,21 +261,21 @@ const ParticleDesign = () => {
                                     }
                                 },
                                 "center": {
-                                    "x": 50,
+                                    "x": 30,
                                     "y": 50,
                                     "mode": "percent",
                                     "radius": 0
                                 },
                                 "decay": 0,
                                 "distance": {},
-                                "direction": "right",
+                                "direction": "top",
                                 "drift": 0,
                                 "enable": true,
                                 "gravity": {
                                     "acceleration": 9.81,
                                     "enable": false,
                                     "inverse": false,
-                                    "maxSpeed": 50
+                                    "maxSpeed": 10
                                 },
                                 "path": {
                                     "clamp": true,
