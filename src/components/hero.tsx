@@ -7,7 +7,7 @@ import ParticleDesign from "./particles";
 
 const HeroSec: React.FC = () => {
     return (
-        <main className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center text-white text-center" style={{ backgroundImage: "url('/path/to/your/background-image.png')" }}>
+        <main className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center text-white text-center">
             <ParticleDesign />
             <div className="flex flex-col items-center space-y-4">
                 <div className="flex flex-row gap-x-2">

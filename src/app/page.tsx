@@ -13,10 +13,12 @@ export default function Home() {
         <Navbar />
       </nav>
       <div className="flex flex-col justify-center items-center ">
+        <div className="max-w-7xl">
         <HeroSec />
         <AboutUs />
         <CountDown />
         <FaqSec />
+        </div>
       </div>
       <FooterSec />
     </>

@@ -2,6 +2,7 @@ import React from 'react';
 import ChallengesCard from '@/components/challanges/challangesCard';
 import NavBar from '@/components/navbar';
 import FooterSec from '@/components/footerSec';
+import ParticleDesign from '@/components/particles';
 
 const challenges = [
     {
@@ -40,6 +41,9 @@ const Page: React.FC = () => {
     return (
         <>
         <NavBar />
+            <div className="flex flex-col justify-center items-center mb-20">
+                <ParticleDesign/>
+                <div className="max-w-7xl">
         <div className="min-h-screen bg-dark text-white pt-40 py-12">
             <div className="container mx-auto">
                 <h2 className="text-4xl font-bold text-center mb-8 md:mb-20">Challanges</h2>
@@ -54,6 +58,8 @@ const Page: React.FC = () => {
                     ))}
                 </div>
             </div>
+        </div>
+        </div>
         </div>
         <FooterSec />
         </>
