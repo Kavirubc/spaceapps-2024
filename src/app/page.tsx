@@ -18,7 +18,9 @@ export default function Home() {
         <AboutUs />
         <CountDown />
         <FaqSec />
+         
         </div>
+        
       </div>
       <FooterSec />
     </>

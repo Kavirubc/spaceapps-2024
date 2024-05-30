@@ -4,8 +4,8 @@ import { Facebook, Instagram, Youtube, Twitter, Linkedin, Phone, Mail } from 'lu
 
 const FooterSec: React.FC = () => {
     return (
-        <footer className="bg-black/80  text-white py-12 text-sm">
-            <div className="container mx-4 md:mx-auto grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-2">
+        <footer className="bg-black/80  text-white py-12 text-sm px-10 md:px-0 md:items-center flex flex-col md:justify-between">
+            <div className="grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-2">
                 <div>
                     <h3 className="text-pink-500 text-lg font-bold mb-4">Useful Links</h3>
                     <ul className="space-y-2">
