@@ -1,8 +1,10 @@
+'use client'
 import React from 'react';
 import ChallengesCard from '@/components/challanges/challangesCard';
 import NavBar from '@/components/navbar';
 import FooterSec from '@/components/footerSec';
 import ParticleDesign from '@/components/particles';
+import { motion } from 'framer-motion';
 
 const challenges = [
     {
@@ -40,28 +42,33 @@ const challenges = [
 const Page: React.FC = () => {
     return (
         <>
-        <NavBar />
+            <NavBar />
             <div className="flex flex-col justify-center items-center mb-20">
-                <ParticleDesign/>
+                <ParticleDesign />
                 <div className="max-w-7xl">
-        <div className="min-h-screen bg-dark text-white pt-40 py-12">
-            <div className="container mx-auto">
-                <h2 className="md:text-4xl text-3xl font-bold text-center mb-12 md:mb-20 ">Challanges</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-8 md:mx-auto">
-                    {challenges.map((challenge, index) => (
-                        <ChallengesCard
-                            key={index}
-                            title={challenge.title}
-                            description={challenge.description}
-                            imageUrl={challenge.imageUrl}
-                        />
-                    ))}
+                    <div className="min-h-screen bg-dark text-white pt-40 py-12">
+                        <div className="container mx-auto">
+                            <h2 className="md:text-4xl text-3xl font-bold text-center mb-12 md:mb-20 ">Challanges</h2>
+                            <motion.div
+                                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-8 md:mx-auto"
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8 }}
+                            >
+                                {challenges.map((challenge, index) => (
+                                    <ChallengesCard
+                                        key={index}
+                                        title={challenge.title}
+                                        description={challenge.description}
+                                        imageUrl={challenge.imageUrl}
+                                    />
+                                ))}
+                            </motion.div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
-        </div>
-        <FooterSec />
+            <FooterSec />
         </>
     );
 };
