@@ -15,7 +15,8 @@ export default function Home() {
   const params = useParams();
 const { push } = useRouter();
     const key = params.key;
-    const isAdmin = key === "kodeksrx";
+  const isAdmin = key === "kodeksrx" || key === "chathurika" || key === "ganesha" || key === "dahami";
+
 
   return (
 <>
