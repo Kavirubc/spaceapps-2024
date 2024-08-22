@@ -47,7 +47,7 @@ const Page: React.FC = () => {
         <div className="min-h-screen bg-dark text-white pt-40 py-12">
             <div className="container mx-auto">
                 <h2 className="text-4xl font-bold text-center mb-8 md:mb-20">Challanges</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-8 md:mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {challenges.map((challenge, index) => (
                         <ChallengesCard
                             key={index}

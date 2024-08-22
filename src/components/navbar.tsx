@@ -13,7 +13,7 @@ const NavBar: React.FC = () => {
     };
 
     return (
-        <nav className='flex flex-col items-center  md:mt-5'>
+        <nav className='flex flex-col items-center  md:mt-3'>
         <div className="text-white py-6 fixed w-full  bg-white/10 backdrop-blur-sm z-50 max-w-6xl rounded-none md:rounded-3xl md:border border-opacity-45 border-violet-800">
             <div className="md:mx-10 mx-2 flex justify-between text-sm">
                 <div className="flex items-center">
